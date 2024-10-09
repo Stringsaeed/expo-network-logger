@@ -1,0 +1,10 @@
+{
+  "extends": "expo/tsconfig.base",
+  "compilerOptions": {
+    "strict": true,
+    "paths": {
+      "react-native-pulse-logger": ["../src/index"],
+      "react-native-pulse-logger/*": ["../src/*"]
+    }
+  }
+}
