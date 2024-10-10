@@ -76,17 +76,18 @@ You will need to make sure that your iOS deployment target is 14.0 or later.
 
     ```json
     {
-        "plugins": [
-          [
-              "expo-build-properties",
-              {
-              "ios": {
-                  "deploymentTarget": "14.0"
-              }
-              }
-          ]
+      "plugins": [
+        [
+          "expo-build-properties",
+          {
+            "ios": {
+              "deploymentTarget": "14.0"
+            }
+          }
         ]
+      ]
     }
+
     ```
 
 2. Manually (Not Recommended):
