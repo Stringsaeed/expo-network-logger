@@ -1,0 +1,260 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.0 effective-5.10 (swiftlang-6.0.0.9.10 clang-1600.0.26.2)
+// swift-module-flags: -target x86_64-apple-ios15.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name PulseUI -package-name PulsePackageIdentifier
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface
+import Charts
+import Combine
+import CommonCrypto
+import CoreData
+import Foundation
+import Network
+import PDFKit
+import Pulse
+import Swift
+import SwiftUI
+import UIKit
+import UniformTypeIdentifiers
+import WatchConnectivity
+import WebKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+@available(iOS 16, visionOS 1, *)
+@_Concurrency.MainActor @preconcurrency public struct SettingsView : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public init(store: Pulse.LoggerStore = .shared)
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  @available(iOS 16, tvOS 13.0, watchOS 6.0, visionOS 1, macOS 10.15, *)
+  public typealias Body = @_opaqueReturnTypeOf("$s7PulseUI12SettingsViewV4bodyQrvp", 0) __
+}
+@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency final public class MainViewController : UIKit.UIViewController {
+  @_Concurrency.MainActor @preconcurrency public static var isAutomaticAppearanceOverrideRemovalEnabled: Swift.Bool
+  @_Concurrency.MainActor @preconcurrency public init(store: Pulse.LoggerStore = .shared)
+  @objc deinit
+}
+extension PulseUI.ConsoleView {
+  @_Concurrency.MainActor @preconcurrency public init(store: Pulse.LoggerStore = .shared, mode: PulseUI.ConsoleMode = .all)
+}
+public enum ConsoleMode : Swift.String {
+  case all
+  case logs
+  case network
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum ShareStoreOutput : Swift.String, Swift.RawRepresentable, Swift.Codable, Swift.CaseIterable {
+  case store, text, html, har
+  public init?(rawValue: Swift.String)
+  public typealias AllCases = [PulseUI.ShareStoreOutput]
+  public typealias RawValue = Swift.String
+  nonisolated public static var allCases: [PulseUI.ShareStoreOutput] {
+    get
+  }
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum ShareOutput {
+  case plainText
+  case html
+  case pdf
+  case har
+  public static func == (a: PulseUI.ShareOutput, b: PulseUI.ShareOutput) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers final public class UserSettings : Combine.ObservableObject {
+  public static let shared: PulseUI.UserSettings
+  @SwiftUI.AppStorage @_projectedValueProperty($mode) final public var mode: PulseUI.ConsoleMode {
+    get
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    set
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    _modify
+  }
+  final public var $mode: SwiftUICore.Binding<PulseUI.ConsoleMode> {
+    get
+  }
+  @SwiftUI.AppStorage @_projectedValueProperty($lineLimit) final public var lineLimit: Swift.Int {
+    get
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    set
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    _modify
+  }
+  final public var $lineLimit: SwiftUICore.Binding<Swift.Int> {
+    get
+  }
+  @SwiftUI.AppStorage @_projectedValueProperty($isLinkDetectionEnabled) final public var isLinkDetectionEnabled: Swift.Bool {
+    get
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    set
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    _modify
+  }
+  final public var $isLinkDetectionEnabled: SwiftUICore.Binding<Swift.Bool> {
+    get
+  }
+  @SwiftUI.AppStorage @_projectedValueProperty($sharingOutput) final public var sharingOutput: PulseUI.ShareStoreOutput {
+    get
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    set
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    _modify
+  }
+  final public var $sharingOutput: SwiftUICore.Binding<PulseUI.ShareStoreOutput> {
+    get
+  }
+  @available(*, deprecated, message: "Replaced with listDisplayOptions.header.fields and listDisplayOptions.footer.fields")
+  final public var displayHeaders: [Swift.String] {
+    get
+    set
+  }
+  @SwiftUI.AppStorage @_projectedValueProperty($isShowingCurrentRequest) final public var isShowingCurrentRequest: Swift.Bool {
+    get
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    set
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    _modify
+  }
+  final public var $isShowingCurrentRequest: SwiftUICore.Binding<Swift.Bool> {
+    get
+  }
+  final public var allowedShareStoreOutputs: [PulseUI.ShareStoreOutput] {
+    get
+    set
+  }
+  @SwiftUI.AppStorage @_projectedValueProperty($isRemoteLoggingHidden) final public var isRemoteLoggingHidden: Swift.Bool {
+    get
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    set
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    _modify
+  }
+  final public var $isRemoteLoggingHidden: SwiftUICore.Binding<Swift.Bool> {
+    get
+  }
+  final public var listDisplayOptions: PulseUI.ConsoleListDisplaySettings {
+    get
+    set
+  }
+  @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+  public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
+  @objc deinit
+}
+public struct ConsoleListDisplaySettings : Swift.Hashable, Swift.Codable {
+  public var header: PulseUI.ConsoleListDisplaySettings.HeaderSettings
+  public var content: PulseUI.ConsoleListDisplaySettings.ContentSettings
+  public var footer: PulseUI.ConsoleListDisplaySettings.FooterSettings
+  public struct HeaderSettings : Swift.Hashable, Swift.Codable {
+    public var fontSize: Swift.Int
+    public var lineLimit: Swift.Int
+    public var fields: [PulseUI.ConsoleListDisplaySettings.TaskField]
+    public init(fontSize: Swift.Int? = nil, lineLimit: Swift.Int = 1, fields: [PulseUI.ConsoleListDisplaySettings.TaskField]? = nil)
+    public func hash(into hasher: inout Swift.Hasher)
+    public static func == (a: PulseUI.ConsoleListDisplaySettings.HeaderSettings, b: PulseUI.ConsoleListDisplaySettings.HeaderSettings) -> Swift.Bool
+    public func encode(to encoder: any Swift.Encoder) throws
+    public var hashValue: Swift.Int {
+      get
+    }
+    public init(from decoder: any Swift.Decoder) throws
+  }
+  public struct ContentSettings : Swift.Hashable, Swift.Codable {
+    public var showTaskDescription: Swift.Bool
+    public var showMethod: Swift.Bool
+    public var components: Swift.Set<PulseUI.ConsoleListDisplaySettings.URLComponent>
+    public var fontSize: Swift.Int
+    public var lineLimit: Swift.Int
+    public var isMonospaced: Swift.Bool
+    public init(showTaskDescription: Swift.Bool = false, showMethod: Swift.Bool = true, components: Swift.Set<PulseUI.ConsoleListDisplaySettings.URLComponent> = [.path], fontSize: Swift.Int? = nil, lineLimit: Swift.Int = 3)
+    public func hash(into hasher: inout Swift.Hasher)
+    public static func == (a: PulseUI.ConsoleListDisplaySettings.ContentSettings, b: PulseUI.ConsoleListDisplaySettings.ContentSettings) -> Swift.Bool
+    public func encode(to encoder: any Swift.Encoder) throws
+    public var hashValue: Swift.Int {
+      get
+    }
+    public init(from decoder: any Swift.Decoder) throws
+  }
+  public struct FooterSettings : Swift.Sendable, Swift.Hashable, Swift.Codable {
+    public var fontSize: Swift.Int
+    public var lineLimit: Swift.Int
+    public var fields: [PulseUI.ConsoleListDisplaySettings.TaskField]
+    public var additionalFields: [PulseUI.ConsoleListDisplaySettings.TaskField]
+    public var isMonospaced: Swift.Bool
+    public init(fontSize: Swift.Int? = nil, lineLimit: Swift.Int = 1)
+    public func hash(into hasher: inout Swift.Hasher)
+    public static func == (a: PulseUI.ConsoleListDisplaySettings.FooterSettings, b: PulseUI.ConsoleListDisplaySettings.FooterSettings) -> Swift.Bool
+    public func encode(to encoder: any Swift.Encoder) throws
+    public var hashValue: Swift.Int {
+      get
+    }
+    public init(from decoder: any Swift.Decoder) throws
+  }
+  public enum URLComponent : Swift.String, Swift.CaseIterable, Swift.Codable {
+    case scheme, user, password, host, port, path, query, fragment
+    public init?(rawValue: Swift.String)
+    public typealias AllCases = [PulseUI.ConsoleListDisplaySettings.URLComponent]
+    public typealias RawValue = Swift.String
+    nonisolated public static var allCases: [PulseUI.ConsoleListDisplaySettings.URLComponent] {
+      get
+    }
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  public enum TaskField : Swift.Sendable, Swift.Codable, Swift.Hashable {
+    case method
+    case requestSize
+    case responseSize
+    case responseContentType
+    case duration
+    case host
+    case statusCode
+    case taskType
+    case taskDescription
+    case requestHeaderField(Swift.String)
+    case responseHeaderField(Swift.String)
+    public func hash(into hasher: inout Swift.Hasher)
+    public static func == (a: PulseUI.ConsoleListDisplaySettings.TaskField, b: PulseUI.ConsoleListDisplaySettings.TaskField) -> Swift.Bool
+    public func encode(to encoder: any Swift.Encoder) throws
+    public var hashValue: Swift.Int {
+      get
+    }
+    public init(from decoder: any Swift.Decoder) throws
+  }
+  public init()
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: PulseUI.ConsoleListDisplaySettings, b: PulseUI.ConsoleListDisplaySettings) -> Swift.Bool
+  public func encode(to encoder: any Swift.Encoder) throws
+  public var hashValue: Swift.Int {
+    get
+  }
+  public init(from decoder: any Swift.Decoder) throws
+}
+@_Concurrency.MainActor @preconcurrency public struct ConsoleView : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public func closeButtonHidden(_ isHidden: Swift.Bool = true) -> PulseUI.ConsoleView
+  @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+  public typealias Body = @_opaqueReturnTypeOf("$s7PulseUI11ConsoleViewV4bodyQrvp", 0) __
+}
+@available(iOS 16, visionOS 1, *)
+extension PulseUI.SettingsView : Swift.Sendable {}
+extension PulseUI.ConsoleView : Swift.Sendable {}
+extension PulseUI.ConsoleMode : Swift.Equatable {}
+extension PulseUI.ConsoleMode : Swift.Hashable {}
+extension PulseUI.ConsoleMode : Swift.RawRepresentable {}
+extension PulseUI.ShareStoreOutput : Swift.Equatable {}
+extension PulseUI.ShareStoreOutput : Swift.Hashable {}
+extension PulseUI.ShareOutput : Swift.Equatable {}
+extension PulseUI.ShareOutput : Swift.Hashable {}
+extension PulseUI.ConsoleListDisplaySettings.URLComponent : Swift.Equatable {}
+extension PulseUI.ConsoleListDisplaySettings.URLComponent : Swift.Hashable {}
+extension PulseUI.ConsoleListDisplaySettings.URLComponent : Swift.RawRepresentable {}

@@ -1,6 +1,6 @@
 {
   "name": "react-native-pulse-logger",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Pulse Logger",
   "main": "build/index.js",
   "types": "build/index.d.ts",
@@ -13,7 +13,9 @@
     "prepublishOnly": "expo-module prepublishOnly",
     "expo-module": "expo-module",
     "open:ios": "xed example/ios",
-    "open:android": "open -a \"Android Studio\" example/android"
+    "open:android": "open -a \"Android Studio\" example/android",
+    "pods": "cd example/ios && pod install && cd ../../",
+    "clean:ios": "cd example/ios && rm -rf Pods build && cd ../../"
   },
   "keywords": [
     "react-native",

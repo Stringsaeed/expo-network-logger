@@ -1,7 +1,5 @@
-export type ChangeEventPayload = {
-  value: string;
-};
+import { StyleProp, ViewStyle } from "react-native";
 
 export type ReactNativePulseLoggerViewProps = {
-  name: string;
+  style: StyleProp<ViewStyle>;
 };

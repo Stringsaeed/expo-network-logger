@@ -1,0 +1,155 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "PulseProxy",
+    "printedName": "PulseProxy",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PulseProxy",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Pulse",
+        "printedName": "Pulse",
+        "declKind": "Import",
+        "moduleName": "PulseProxy"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "NetworkLogger",
+        "printedName": "NetworkLogger",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "enableProxy",
+            "printedName": "enableProxy(logger:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Pulse.NetworkLogger?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NetworkLogger",
+                    "printedName": "Pulse.NetworkLogger",
+                    "usr": "s:5Pulse13NetworkLoggerC"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5Pulse13NetworkLoggerC0A5ProxyE06enableD06loggeryACSg_tFZ",
+            "mangledName": "$s5Pulse13NetworkLoggerC0A5ProxyE06enableD06loggeryACSg_tFZ",
+            "moduleName": "PulseProxy",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:5Pulse13NetworkLoggerC",
+        "mangledName": "$s5Pulse13NetworkLoggerC",
+        "moduleName": "Pulse",
+        "declAttributes": [
+          "Final"
+        ],
+        "isExternal": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/kean\/Developer\/_Rift\/Modules\/Sources\/PulseProxy\/URLSessionSwizzler.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1106,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/kean\/Developer\/_Rift\/Modules\/Sources\/PulseProxy\/URLSessionSwizzler.swift",
+      "kind": "Array",
+      "offset": 3653,
+      "length": 40,
+      "value": "[\"_\", \"didFinish\", \"With\", \"Error\", \":\"]"
+    },
+    {
+      "filePath": "\/Users\/kean\/Developer\/_Rift\/Modules\/Sources\/PulseProxy\/URLSessionSwizzler.swift",
+      "kind": "StringLiteral",
+      "offset": 4321,
+      "length": 6,
+      "value": "\"task\""
+    },
+    {
+      "filePath": "\/Users\/kean\/Developer\/_Rift\/Modules\/Sources\/PulseProxy\/URLSessionSwizzler.swift",
+      "kind": "Array",
+      "offset": 4446,
+      "length": 38,
+      "value": "[\"_\", \"incomplete\", \"Task\", \"Metrics\"]"
+    },
+    {
+      "filePath": "\/Users\/kean\/Developer\/_Rift\/Modules\/Sources\/PulseProxy\/URLSessionSwizzler.swift",
+      "kind": "StringLiteral",
+      "offset": 4708,
+      "length": 25,
+      "value": "\"kCFErrorDomainCFNetwork\""
+    },
+    {
+      "filePath": "\/Users\/kean\/Developer\/_Rift\/Modules\/Sources\/PulseProxy\/URLSessionSwizzler.swift",
+      "kind": "Array",
+      "offset": 5436,
+      "length": 36,
+      "value": "[\"_\", \"did\", \"Receive\", \"Data\", \":\"]"
+    },
+    {
+      "filePath": "\/Users\/kean\/Developer\/_Rift\/Modules\/Sources\/PulseProxy\/URLSessionSwizzler.swift",
+      "kind": "StringLiteral",
+      "offset": 6100,
+      "length": 6,
+      "value": "\"task\""
+    }
+  ]
+}

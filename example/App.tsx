@@ -1,11 +1,27 @@
-import { StyleSheet, Text, View } from 'react-native';
+import { useEffect } from "react";
+import { StyleSheet, Text, View } from "react-native";
 
-import * as ReactNativePulseLogger from 'react-native-pulse-logger';
+import * as ReactNativePulseLogger from "react-native-pulse-logger";
+import { ReactNativePulseLoggerView } from "react-native-pulse-logger";
 
 export default function App() {
+  useEffect(() => {
+    ReactNativePulseLogger.enableLogging(true).then(() => {
+      fetch("https://jsonplaceholder.typicode.com/posts")
+        .then((response) => response.json())
+        .then((json) => {
+          // noop
+        });
+    });
+  }, []);
+
   return (
     <View style={styles.container}>
-      <Text>{ReactNativePulseLogger.hello()}</Text>
+      <ReactNativePulseLoggerView
+        style={{
+          flex: 1,
+        }}
+      />
     </View>
   );
 }
@@ -13,8 +29,6 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    backgroundColor: "#fff",
   },
 });

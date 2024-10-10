@@ -1199,7 +1199,7 @@ PODS:
     - React-logger (= 0.74.5)
     - React-perflogger (= 0.74.5)
     - React-utils (= 0.74.5)
-  - ReactNativePulseLogger (0.1.0):
+  - ReactNativePulseLogger (0.1.1):
     - ExpoModulesCore
   - SocketRocket (0.7.0)
   - Yoga (0.0.0)
@@ -1462,7 +1462,7 @@ SPEC CHECKSUMS:
   React-runtimescheduler: cfbe85c3510c541ec6dc815c7729b41304b67961
   React-utils: f242eb7e7889419d979ca0e1c02ccc0ea6e43b29
   ReactCommon: f7da14a8827b72704169a48c929bcde802698361
-  ReactNativePulseLogger: 1a29bdd2180e96b4a0b5c0669d71c5d35b75f90a
+  ReactNativePulseLogger: 3cf7a9f20f2760fa857116398b967bb6bd814355
   SocketRocket: abac6f5de4d4d62d24e11868d7a2f427e0ef940d
   Yoga: 950bbfd7e6f04790fdb51149ed51df41f329fcc8
 
