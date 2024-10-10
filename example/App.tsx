@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { StyleSheet, View } from "react-native";
+import { StyleSheet, Text, View } from "react-native";
 
 import * as ReactNativePulseLogger from "react-native-pulse-logger";
 
@@ -21,6 +21,9 @@ export default function App() {
           flex: 1,
         }}
       />
+      <View pointerEvents="none" style={styles.overlay}>
+        <Text style={styles.overlayText}>This is from react native</Text>
+      </View>
     </View>
   );
 }
@@ -29,5 +32,20 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: "#fff",
+  },
+  overlay: {
+    position: "absolute",
+    top: 0,
+    left: 0,
+    right: 0,
+    bottom: 0,
+    backgroundColor: "rgba(0, 0, 0, 0.5)",
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  overlayText: {
+    color: "white",
+    fontSize: 20,
+    fontWeight: "bold",
   },
 });
