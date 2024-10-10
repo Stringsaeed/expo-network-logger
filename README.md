@@ -44,7 +44,7 @@ bun add react-native-pulse-logger
 
 You will need to make sure that your iOS deployment target is 14.0 or later.
 
-1. Using expo plugin (Recommended)
+1. Using expo plugin **(Recommended)**:
 
     ```bash
     npx expo install expo-build-properties
@@ -67,7 +67,8 @@ You will need to make sure that your iOS deployment target is 14.0 or later.
     }
     ```
 
-2. Using cocoapods (Not Recommended):
+2. Manually (Not Recommended):
+
     Navigate to Podfile and replace this line
 
     ```ruby
