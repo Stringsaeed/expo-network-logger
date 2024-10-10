@@ -5,8 +5,8 @@ a library for wrapping [Pulse](https://pulselogger.com/) in React Native (Expo).
 It's only for iOS at the moment.
 
 | ConsoleView (SwiftUI) | PulseLoggerView (with react native view) |
+|---|---|
 | <img src="image.png" alt="Pulse Logger in React Native in Action" /> | <img src="image2.png" alt="Pulse Logger in React Native in Action" /> |
-
 
 ## Table of Contents
 
