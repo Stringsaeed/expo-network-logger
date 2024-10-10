@@ -2,8 +2,5 @@
   "platforms": ["ios"],
   "ios": {
     "modules": ["ReactNativePulseLoggerModule"]
-  },
-  "android": {
-    "modules": ["expo.modules.pulselogger.ReactNativePulseLoggerModule"]
   }
 }
