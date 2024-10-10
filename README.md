@@ -4,7 +4,7 @@ a library for wrapping [Pulse](https://pulselogger.com/) in React Native (Expo).
 
 It's only for iOS at the moment.
 
-![Pulse Logger in React Native](image.png)
+<img src="image.png" width="50%" alt="Pulse Logger in React Native in Action" />
 
 ## Installation in managed Expo projects
 
