@@ -14,7 +14,7 @@ public class ReactNativePulseLoggerModule: Module {
         
         // Defines a JavaScript function that always returns a Promise and whose native code
         // is by default dispatched on the different thread than the JavaScript runtime runs on.
-        AsyncFunction("enableLogging") { (value: Bool) in
+        Function("enableLogging") { (value: Bool) in
             NetworkLogger.enableProxy()
         }
         
