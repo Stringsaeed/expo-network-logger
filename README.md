@@ -92,16 +92,11 @@ You will need to make sure that your iOS deployment target is 14.0 or later.
 
 2. Manually (Not Recommended):
 
-    Navigate to Podfile and replace this line
+    Navigate to `ios/Podfile` and replace this line with `platform :ios, '14.0'`
 
-    ```ruby
-    platform :ios, podfile_properties['ios.deploymentTarget'] || '13.4'
-    ```
-
-    with this line
-
-    ```ruby
-    platform :ios, '14.0'
+    ```diff
+    - platform :ios, podfile_properties['ios.deploymentTarget'] || '13.4'
+    + platform :ios, '14.0'
     ```
 
 Run `npx pod-install` after installing the npm package.
