@@ -1,6 +1,6 @@
-# react-native-pulse-logger
+# expo-network-logger
 
-a library for wrapping [Pulse](https://pulselogger.com/) in React Native (Expo). 
+a library for wrapping [Pulse](https://pulselogger.com/) in React Native (Expo) and [Chucker](https://github.com/ChuckerTeam/chucker) in React Native (Expo).
 
 It's only for iOS at the moment.
 
@@ -10,7 +10,7 @@ It's only for iOS at the moment.
 
 ## Table of Contents
 
-- [react-native-pulse-logger](#react-native-pulse-logger)
+- [expo-network-logger](#expo-network-logger)
   - [Table of Contents](#table-of-contents)
   - [Installation](#installation)
     - [Installation in managed Expo projects](#installation-in-managed-expo-projects)
@@ -38,25 +38,25 @@ For bare React Native projects, you must ensure that you have [installed and con
 Using npm:
 
  ```bash
-npm install react-native-pulse-logger
+npm install expo-network-logger
 ```
 
 Using yarn:
 
 ```bash
-yarn add react-native-pulse-logger
+yarn add expo-network-logger
 ```
 
 Using pnpm:
 
 ```bash
-pnpm add react-native-pulse-logger
+pnpm add expo-network-logger
 ```
 
 Using bun:
 
 ```bash
-bun add react-native-pulse-logger
+bun add expo-network-logger
 ```
 
 ## Configuration
@@ -105,7 +105,7 @@ Run `npx pod-install` after installing the npm package.
 ### Enable logging
 
 ```typescript
-import { enableLogging } from "react-native-pulse-logger";
+import { enableLogging } from "expo-network-logger";
 
 enableLogging(true);
 ```
@@ -113,7 +113,7 @@ enableLogging(true);
 ### Show Pulse Logger View
 
 ```tsx
-import { ReactNativePulseLoggerView } from "react-native-pulse-logger";
+import { ReactNativePulseLoggerView } from "expo-network-logger";
 
 <ReactNativePulseLoggerView style={{ flex: 1 }} />
 ```
