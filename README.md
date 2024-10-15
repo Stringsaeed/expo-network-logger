@@ -20,7 +20,8 @@ It's only for iOS at the moment.
     - [Configure for iOS](#configure-for-ios)
   - [Usage](#usage)
     - [Enable logging](#enable-logging)
-    - [Show Pulse Logger View](#show-pulse-logger-view)
+    - [Show Pulse Logger View (iOS only)](#show-pulse-logger-view-ios-only)
+    - [Show Chucker View (Android only)](#show-chucker-view-android-only)
   - [Contributing](#contributing)
 
 ## Installation
@@ -110,12 +111,20 @@ import { enableLogging } from "expo-network-logger";
 enableLogging(true);
 ```
 
-### Show Pulse Logger View
+### Show Pulse Logger View (iOS only)
 
 ```tsx
-import { ReactNativePulseLoggerView } from "expo-network-logger";
+import { ExpoNetworkLoggerView } from "expo-network-logger";
 
-<ReactNativePulseLoggerView style={{ flex: 1 }} />
+<ExpoNetworkLoggerView style={{ flex: 1 }} />
+```
+
+### Show Chucker View (Android only)
+
+```tsx
+import { launchScreen } from "expo-network-logger";
+
+launchScreen();
 ```
 
 ## Contributing
