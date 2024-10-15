@@ -109,9 +109,9 @@ android {
     buildToolsVersion rootProject.ext.buildToolsVersion
     compileSdk rootProject.ext.compileSdkVersion
 
-    namespace 'expo.modules.pulselogger.example'
+    namespace 'expo.modules.networklogger.example'
     defaultConfig {
-        applicationId 'expo.modules.pulselogger.example'
+        applicationId 'expo.modules.networklogger.example'
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1

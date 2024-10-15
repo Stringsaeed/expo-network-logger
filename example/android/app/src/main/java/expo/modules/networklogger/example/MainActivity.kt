@@ -1,4 +1,4 @@
-package expo.modules.pulselogger.example
+package expo.modules.networklogger.example
 
 import android.os.Build
 import android.os.Bundle

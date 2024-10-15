@@ -1,7 +1,7 @@
 {
-  "name": "react-native-pulse-logger",
-  "version": "0.1.1",
-  "description": "Pulse Logger",
+  "name": "expo-network-logger",
+  "version": "0.1.0",
+  "description": "Native network logger for debugging",
   "main": "build/index.js",
   "types": "build/index.d.ts",
   "scripts": {
@@ -13,30 +13,26 @@
     "prepublishOnly": "expo-module prepublishOnly",
     "expo-module": "expo-module",
     "open:ios": "xed example/ios",
-    "open:android": "open -a \"Android Studio\" example/android",
-    "pods": "cd example/ios && pod install && cd ../../",
-    "clean:ios": "cd example/ios && rm -rf Pods build && cd ../../"
+    "open:android": "open -a \"Android Studio\" example/android"
   },
   "keywords": [
     "react-native",
     "expo",
-    "react-native-pulse-logger",
-    "ReactNativePulseLogger"
+    "expo-network-logger",
+    "ExpoNetworkLogger"
   ],
-  "repository": "https://github.com/Stringsaeed/react-native-pulse-logger",
+  "repository": "https://github.com/Stringsaeed/expo-network-logger",
   "bugs": {
-    "url": "https://github.com/Stringsaeed/react-native-pulse-logger/issues"
+    "url": "https://github.com/Stringsaeed/expo-network-logger/issues"
   },
   "author": "Muhammed Ibrahim <stringsaeed@gmail.com> (https://github.com/Stringsaeed)",
   "license": "MIT",
-  "homepage": "https://github.com/Stringsaeed/react-native-pulse-logger#readme",
+  "homepage": "https://github.com/Stringsaeed/expo-network-logger#readme",
   "dependencies": {},
   "devDependencies": {
     "@types/react": "^18.0.25",
-    "eslint": "8",
     "expo-module-scripts": "^3.5.2",
     "expo-modules-core": "^1.12.24",
-    "prettier": "^3.3.3",
     "react": "18.2.0",
     "react-native": "0.74.5"
   },

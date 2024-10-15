@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "react-native-pulse-logger-example",
-    "slug": "react-native-pulse-logger-example",
+    "name": "expo-network-logger-example",
+    "slug": "expo-network-logger-example",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -13,27 +13,17 @@
     },
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "expo.modules.pulselogger.example"
+      "bundleIdentifier": "expo.modules.networklogger.example"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "expo.modules.pulselogger.example"
+      "package": "expo.modules.networklogger.example"
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    },
-    "plugins": [
-      [
-        "expo-build-properties",
-        {
-          "ios": {
-            "deploymentTarget": "14.0"
-          }
-        }
-      ]
-    ]
+    }
   }
 }

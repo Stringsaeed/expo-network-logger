@@ -1,11 +1,20 @@
 // Import the native module. On web, it will be resolved to ReactNativePulseLogger.web.ts
 // and on native platforms to ReactNativePulseLogger.ts
-import { ReactNativePulseLoggerViewProps } from "./ReactNativePulseLogger.types";
-import ReactNativePulseLoggerModule from "./ReactNativePulseLoggerModule";
-import ReactNativePulseLoggerView from "./ReactNativePulseLoggerView";
+import { Platform } from "react-native";
 
-export function enableLogging(value: boolean) {
-  return ReactNativePulseLoggerModule.enableLogging(value);
+import { ExpoNetworkLoggerViewProps } from "./ExpoNetworkLogger.types";
+import ExpoNetworkLoggerModule from "./ExpoNetworkLoggerModule";
+import ExpoNetworkLoggerView from "./ExpoNetworkLoggerView.ios";
+
+export function enableLogging() {
+  return ExpoNetworkLoggerModule.enableLogging();
 }
 
-export { ReactNativePulseLoggerView, ReactNativePulseLoggerViewProps };
+export function launchScreen() {
+  if (Platform.OS !== "android") {
+    return;
+  }
+  ExpoNetworkLoggerModule.launchScreen();
+}
+
+export { ExpoNetworkLoggerView, ExpoNetworkLoggerViewProps };

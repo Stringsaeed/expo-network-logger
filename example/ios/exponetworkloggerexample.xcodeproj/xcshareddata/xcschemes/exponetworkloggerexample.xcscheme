@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-               BuildableName = "reactnativepulseloggerexample.app"
-               BlueprintName = "reactnativepulseloggerexample"
-               ReferencedContainer = "container:reactnativepulseloggerexample.xcodeproj">
+               BuildableName = "exponetworkloggerexample.app"
+               BlueprintName = "exponetworkloggerexample"
+               ReferencedContainer = "container:exponetworkloggerexample.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "00E356ED1AD99517003FC87E"
-               BuildableName = "reactnativepulseloggerexampleTests.xctest"
-               BlueprintName = "reactnativepulseloggerexampleTests"
-               ReferencedContainer = "container:reactnativepulseloggerexample.xcodeproj">
+               BuildableName = "exponetworkloggerexampleTests.xctest"
+               BlueprintName = "exponetworkloggerexampleTests"
+               ReferencedContainer = "container:exponetworkloggerexample.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -55,9 +55,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "reactnativepulseloggerexample.app"
-            BlueprintName = "reactnativepulseloggerexample"
-            ReferencedContainer = "container:reactnativepulseloggerexample.xcodeproj">
+            BuildableName = "exponetworkloggerexample.app"
+            BlueprintName = "exponetworkloggerexample"
+            ReferencedContainer = "container:exponetworkloggerexample.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -72,9 +72,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "reactnativepulseloggerexample.app"
-            BlueprintName = "reactnativepulseloggerexample"
-            ReferencedContainer = "container:reactnativepulseloggerexample.xcodeproj">
+            BuildableName = "exponetworkloggerexample.app"
+            BlueprintName = "exponetworkloggerexample"
+            ReferencedContainer = "container:exponetworkloggerexample.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

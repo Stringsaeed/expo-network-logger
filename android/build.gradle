@@ -1,6 +1,6 @@
 apply plugin: 'com.android.library'
 
-group = 'expo.modules.pulselogger'
+group = 'expo.modules.networklogger'
 version = '0.1.0'
 
 def expoModulesCorePlugin = new File(project(":expo-modules-core").projectDir.absolutePath, "ExpoModulesCorePlugin.gradle")
@@ -32,7 +32,7 @@ if (useManagedAndroidSdkVersions) {
 }
 
 android {
-  namespace "expo.modules.pulselogger"
+  namespace "expo.modules.networklogger"
   defaultConfig {
     versionCode 1
     versionName "0.1.0"
@@ -40,4 +40,9 @@ android {
   lintOptions {
     abortOnError false
   }
+}
+
+dependencies {
+  implementation 'com.facebook.react:react-android:0.74.5'
+  implementation "com.github.chuckerteam.chucker:library:4.0.0"
 }

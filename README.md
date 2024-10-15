@@ -6,20 +6,22 @@ It's only for iOS at the moment.
 
 | ConsoleView (SwiftUI)                                                | PulseLoggerView (with react native view)                              |
 | -------------------------------------------------------------------- | --------------------------------------------------------------------- |
-| <img src="image.png" alt="Pulse Logger in React Native in Action" /> | <img src="image2.png" alt="Pulse Logger in React Native in Action" /> |
+| <img src=".github/assets/image.png" alt="Pulse Logger in React Native in Action" /> | <img src=".github/assets/image2.png" alt="Pulse Logger in React Native in Action" /> |
 
 ## Table of Contents
 
-- [Installation](#installation)
-  - [Installation in managed Expo projects](#installation-in-managed-expo-projects)
-  - [Installation in bare React Native projects](#installation-in-bare-react-native-projects)
-  - [Add the package to your npm dependencies](#add-the-package-to-your-npm-dependencies)
-- [Configuration](#configuration)
-  - [Configure for iOS](#configure-for-ios)
-- [Usage](#usage)
-  - [Enable logging](#enable-logging)
-  - [Show Pulse Logger View](#show-pulse-logger-view)
-- [Contributing](#contributing)
+- [react-native-pulse-logger](#react-native-pulse-logger)
+  - [Table of Contents](#table-of-contents)
+  - [Installation](#installation)
+    - [Installation in managed Expo projects](#installation-in-managed-expo-projects)
+    - [Installation in bare React Native projects](#installation-in-bare-react-native-projects)
+    - [Add the package to your npm dependencies](#add-the-package-to-your-npm-dependencies)
+  - [Configuration](#configuration)
+    - [Configure for iOS](#configure-for-ios)
+  - [Usage](#usage)
+    - [Enable logging](#enable-logging)
+    - [Show Pulse Logger View](#show-pulse-logger-view)
+  - [Contributing](#contributing)
 
 ## Installation
 

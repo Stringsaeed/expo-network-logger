@@ -1,5 +1,5 @@
 import { StyleProp, ViewStyle } from "react-native";
 
-export type ReactNativePulseLoggerViewProps = {
+export type ExpoNetworkLoggerViewProps = {
   style: StyleProp<ViewStyle>;
 };

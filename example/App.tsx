@@ -1,29 +1,53 @@
 import { useEffect } from "react";
-import { StyleSheet, Text, View } from "react-native";
+import { Button, Image, Platform, StyleSheet, Text, View } from "react-native";
+import * as ExpoNetworkLogger from "expo-network-logger";
 
-import * as ReactNativePulseLogger from "react-native-pulse-logger";
+ExpoNetworkLogger.enableLogging();
 
-ReactNativePulseLogger.enableLogging(true);
+function doRequest() {
+  return fetch("https://jsonplaceholder.typicode.com/posts")
+    .then((response) => response.json())
+    .then(() => {
+      // noop
+    });
+}
 
 export default function App() {
   useEffect(() => {
-    fetch("https://jsonplaceholder.typicode.com/posts")
-      .then((response) => response.json())
-      .then(() => {
-        // noop
-      });
+    doRequest();
   }, []);
 
   return (
     <View style={styles.container}>
-      <ReactNativePulseLogger.ReactNativePulseLoggerView
+      <ExpoNetworkLogger.ExpoNetworkLoggerView
         style={{
           flex: 1,
         }}
       />
-      <View pointerEvents="none" style={styles.overlay}>
-        <Text style={styles.overlayText}>This is from react native</Text>
-      </View>
+      <Image
+        source={{
+          uri: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/220px-Image_created_with_a_mobile_phone.png",
+        }}
+        style={{
+          width: 220,
+          height: 220,
+        }}
+      />
+      {Platform.OS === "android" && (
+        <Button
+          title="Launch Pulse"
+          onPress={() => {
+            doRequest().then(() => {
+              ExpoNetworkLogger.launchScreen();
+            });
+          }}
+        />
+      )}
+      {Platform.OS !== "android" && (
+        <View pointerEvents="none" style={styles.overlay}>
+          <Text style={styles.overlayText}>This is from react native</Text>
+        </View>
+      )}
     </View>
   );
 }

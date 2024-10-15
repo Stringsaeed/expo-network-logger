@@ -3,8 +3,8 @@
   "compilerOptions": {
     "strict": true,
     "paths": {
-      "react-native-pulse-logger": ["../src/index"],
-      "react-native-pulse-logger/*": ["../src/*"]
+      "expo-network-logger": ["../src/index"],
+      "expo-network-logger/*": ["../src/*"]
     }
   }
 }

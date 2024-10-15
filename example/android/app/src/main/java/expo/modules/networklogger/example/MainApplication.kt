@@ -1,4 +1,4 @@
-package expo.modules.pulselogger.example
+package expo.modules.networklogger.example
 
 import android.app.Application
 import android.content.res.Configuration
