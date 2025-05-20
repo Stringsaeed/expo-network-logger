@@ -6,7 +6,7 @@ module.exports = async (env, argv) => {
     {
       ...env,
       babel: {
-        dangerouslyAddModulePathsToTranspile: ['expo-network-logger'],
+        dangerouslyAddModulePathsToTranspile: ['@stringsaeed/expo-network-logger'],
       },
     },
     argv

@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { Button, Image, Platform, StyleSheet, Text, View } from "react-native";
-import * as ExpoNetworkLogger from "expo-network-logger";
+import * as ExpoNetworkLogger from "@stringsaeed/expo-network-logger";
 
 ExpoNetworkLogger.enableLogging();
 

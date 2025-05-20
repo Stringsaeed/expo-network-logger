@@ -39,25 +39,25 @@ For bare React Native projects, you must ensure that you have [installed and con
 Using npm:
 
  ```bash
-npm install expo-network-logger
+npm install @stringsaeed/expo-network-logger
 ```
 
 Using yarn:
 
 ```bash
-yarn add expo-network-logger
+yarn add @stringsaeed/expo-network-logger
 ```
 
 Using pnpm:
 
 ```bash
-pnpm add expo-network-logger
+pnpm add @stringsaeed/expo-network-logger
 ```
 
 Using bun:
 
 ```bash
-bun add expo-network-logger
+bun add @stringsaeed/expo-network-logger
 ```
 
 ## Configuration
@@ -106,7 +106,7 @@ Run `npx pod-install` after installing the npm package.
 ### Enable logging
 
 ```typescript
-import { enableLogging } from "expo-network-logger";
+import { enableLogging } from "@stringsaeed/expo-network-logger";
 
 enableLogging(true);
 ```
@@ -114,7 +114,7 @@ enableLogging(true);
 ### Show Pulse Logger View (iOS only)
 
 ```tsx
-import { ExpoNetworkLoggerView } from "expo-network-logger";
+import { ExpoNetworkLoggerView } from "@stringsaeed/expo-network-logger";
 
 <ExpoNetworkLoggerView style={{ flex: 1 }} />
 ```
@@ -122,7 +122,7 @@ import { ExpoNetworkLoggerView } from "expo-network-logger";
 ### Show Chucker View (Android only)
 
 ```tsx
-import { launchScreen } from "expo-network-logger";
+import { launchScreen } from "@stringsaeed/expo-network-logger";
 
 launchScreen();
 ```
