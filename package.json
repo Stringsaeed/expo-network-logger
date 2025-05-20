@@ -1,6 +1,6 @@
 {
-  "name": "expo-network-logger",
-  "version": "0.1.0",
+  "name": "@stringsaeed/expo-network-logger",
+  "version": "1.0.1",
   "description": "Native network logger for debugging",
   "main": "build/index.js",
   "types": "build/index.d.ts",
@@ -13,7 +13,8 @@
     "prepublishOnly": "expo-module prepublishOnly",
     "expo-module": "expo-module",
     "open:ios": "xed example/ios",
-    "open:android": "open -a \"Android Studio\" example/android"
+    "open:android": "open -a \"Android Studio\" example/android",
+    "publish": "npm publish --access public"
   },
   "keywords": [
     "react-native",
@@ -21,7 +22,10 @@
     "expo-network-logger",
     "ExpoNetworkLogger"
   ],
-  "repository": "https://github.com/Stringsaeed/expo-network-logger",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Stringsaeed/expo-network-logger.git"
+  },
   "bugs": {
     "url": "https://github.com/Stringsaeed/expo-network-logger/issues"
   },
@@ -40,5 +44,9 @@
     "expo": "*",
     "react": "*",
     "react-native": "*"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com",
+    "access": "public"
   }
 }
