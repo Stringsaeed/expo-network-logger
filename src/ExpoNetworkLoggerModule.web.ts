@@ -1,8 +1,12 @@
-export default {
-  enableLogging: () => {
+import { registerWebModule, NativeModule } from 'expo';
+
+class ExpoNetworkLogger extends NativeModule {
+  async enableLogging() {
     console.warn("enableLogging is not supported on web");
-  },
-  launchScreen: () => {
+  }
+  launchScreen() {
     console.warn("launchScreen is not supported on web");
-  },
-};
+  }
+}
+
+export default registerWebModule(ExpoNetworkLogger, 'ExpoNetworkLogger');

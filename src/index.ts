@@ -14,7 +14,7 @@ export function launchScreen() {
   if (Platform.OS !== "android") {
     return;
   }
-  ExpoNetworkLoggerModule.launchScreen();
+  ExpoNetworkLoggerModule.launchScreen?.();
 }
 
 export { ExpoNetworkLoggerView, ExpoNetworkLoggerViewProps };

@@ -36,11 +36,10 @@
     "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/git": "^10.0.1",
     "@semantic-release/github": "^11.0.2",
-    "@types/react": "^18.0.25",
+    "@types/react": "~19.1.1",
+    "expo": "^55.0.16",
     "expo-module-scripts": "^55.0.2",
-    "expo-modules-core": "^55.0.23",
-    "react": "18.2.0",
-    "react-native": "0.74.5",
+    "react-native": "0.82.1",
     "semantic-release": "^24.2.4"
   },
   "peerDependencies": {
