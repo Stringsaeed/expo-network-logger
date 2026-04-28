@@ -14,7 +14,8 @@
     "expo-module": "expo-module",
     "open:ios": "xed example/ios",
     "open:android": "open -a \"Android Studio\" example/android",
-    "publish": "npm publish --access public"
+    "publish": "npm publish --access public",
+    "example": "cd example && pnpm"
   },
   "keywords": [
     "react-native",
@@ -39,6 +40,7 @@
     "@types/react": "~19.1.1",
     "expo": "^55.0.16",
     "expo-module-scripts": "^55.0.2",
+    "prettier": "^3.8.3",
     "react-native": "0.82.1",
     "semantic-release": "^24.2.4"
   },
