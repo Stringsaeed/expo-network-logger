@@ -5,6 +5,7 @@
     "paths": {
       "@stringsaeed/expo-network-logger": ["../src/index"],
       "@stringsaeed/expo-network-logger/*": ["../src/*"]
-    }
+    },
+    "jsx": "react-native"
   }
 }

@@ -14,7 +14,7 @@ public class ExpoNetworkLoggerModule: Module {
         
         // Defines a JavaScript function that always returns a Promise and whose native code
         // is by default dispatched on the different thread than the JavaScript runtime runs on.
-        Function("enableLogging") { (value: Bool) in
+        Function("enableLogging") {
             NetworkLogger.enableProxy()
         }
         

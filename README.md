@@ -108,7 +108,7 @@ Run `npx pod-install` after installing the npm package.
 ```typescript
 import { enableLogging } from "@stringsaeed/expo-network-logger";
 
-enableLogging(true);
+enableLogging();
 ```
 
 ### Show Pulse Logger View (iOS only)
