@@ -19,7 +19,7 @@ config.resolver.nodeModulesPaths = [
 ];
 
 config.resolver.extraNodeModules = {
-  '@stringsaeed/expo-network-logger': '..',
+  'expo-network-logger': '..',
 };
 
 config.watchFolders = [path.resolve(__dirname, '..')];
