@@ -1,5 +1,5 @@
 {
-  "name": "@stringsaeed/expo-network-logger",
+  "name": "expo-network-logger",
   "version": "1.0.1",
   "description": "Native network logger for debugging",
   "main": "build/index.js",
