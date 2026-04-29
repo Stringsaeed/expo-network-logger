@@ -20,6 +20,7 @@
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
+      "predictiveBackGestureEnabled": false,
       "package": "expo.modules.networklogger.example"
     },
     "web": {
